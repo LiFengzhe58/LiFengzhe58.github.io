@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="K1ndlyLiz 学习 Hello Agents 第二章《智能体发展史》的学习日志。"
+    />
+    <title>Hello agents学习chapter2 | K1ndlyLiz</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="K1ndlyLiz 首页">
+        <span class="brand-mark">K</span>
+        <span>K1ndlyLiz</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="../index.html">首页</a>
+        <a href="../index.html#posts" aria-current="page">文章</a>
+        <a href="../about.html">关于</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <article class="article-page">
+        <a class="back-link" href="../index.html#posts">← 返回文章列表</a>
+        <time datetime="2026-05-29">2026-05-29</time>
+        <h1>Hello agents学习chapter2</h1>
+        <p class="lead">
+          今天学习 Datawhale《Hello Agents》第二章《智能体发展史》。这一章最大的价值，是把现代 Agent 放回历史里看：它不是突然出现的概念，而是符号主义、规则系统、分布式智能、强化学习和大模型预训练一步步汇合后的结果。
+        </p>
+
+        <figure class="article-figure">
+          <img src="imgs/chapter2/01-timeline-agent-history.png" alt="智能体发展史时间线配图" />
+          <figcaption>从符号主义到 LLM Agent，每一代范式都在回应上一代的局限。</figcaption>
+        </figure>
+
+        <h2>第一条线索：符号主义相信智能可以被写成规则</h2>
+        <p>
+          早期 AI 的核心信念是：只要能把世界知识表示成符号，再配上逻辑推理过程，机器就可以表现出智能。这背后对应的是物理符号系统假说，也就是把智能理解成“符号的计算与处理”。
+        </p>
+        <p>
+          专家系统就是这种思想的典型成果。它把专家经验写进知识库，再由推理机根据用户提供的事实进行推导。它的优势是可解释、规则清楚，在边界明确的专业任务中很有力量。
+        </p>
+
+        <figure class="article-figure">
+          <img src="imgs/chapter2/02-framework-expert-system.png" alt="专家系统结构配图" />
+          <figcaption>专家系统的强项是知识和推理可追踪，弱点是知识获取成本高、遇到规则外情况容易失灵。</figcaption>
+        </figure>
+
+        <p>
+          但符号主义也很快遇到两个硬问题：第一，真实世界的常识太多，不能靠人手一条条写完；第二，现实环境变化复杂，规则系统遇到没有覆盖的新情况时会很脆弱。这也是后来学习范式兴起的重要原因。
+        </p>
+
+        <h2>ELIZA：看起来理解，不等于真的理解</h2>
+        <p>
+          第二章还讲到 ELIZA 这个早期聊天机器人。它通过关键词识别、模式匹配和模板回复，让用户感觉机器似乎在理解自己。比如识别到某个句式后，把用户的话改写成开放式问题。
+        </p>
+        <p>
+          这一段对我很有启发：自然语言交互的表面效果，可能来自规则技巧，而不一定来自真正的语义理解。ELIZA 的历史意义不只是“早期聊天机器人”，更像是在提醒我们，不要轻易把流畅回答等同于真实智能。
+        </p>
+
+        <figure class="article-figure">
+          <img src="imgs/chapter2/03-flowchart-eliza-rules.png" alt="ELIZA 规则回复流程配图" />
+          <figcaption>ELIZA 用规则制造“被理解”的感觉，但它并没有真正理解用户的语义。</figcaption>
+        </figure>
+
+        <h2>第二条线索：智能不一定来自单一中心</h2>
+        <p>
+          之后的“心智社会”思想提出了另一个视角：复杂智能可以由许多简单单元协作涌现出来。这和今天的多智能体系统很容易联系起来。一个复杂任务可以拆成多个角色、多个模块、多个步骤，让它们通过协作完成整体目标。
+        </p>
+        <p>
+          我理解这部分的关键词是“分工”。单个智能体不一定要完美，系统可以通过组合多个有限能力的模块，获得更强的整体能力。
+        </p>
+
+        <h2>第三条线索：学习改变了能力的来源</h2>
+        <p>
+          符号主义主要依赖人类提前写入知识，而联结主义和强化学习让智能体开始从数据和交互中学习。神经网络通过大量样本学习表示，强化学习则强调智能体在环境中试错，通过奖励反馈优化策略。
+        </p>
+        <p>
+          强化学习对 Agent 很关键，因为 Agent 做的往往不是一次性判断，而是序贯决策：当前这一步可能不是最优，但它可能为未来带来更高的累积收益。AlphaGo 这类系统就体现了“为了长期目标规划行动”的思路。
+        </p>
+
+        <h2>预训练：用海量数据绕开知识获取瓶颈</h2>
+        <p>
+          大模型预训练让我看到了另一种“知识进入系统”的方式。符号主义需要人把知识手工编码进规则库，而预训练模型通过海量文本数据和自监督学习，把语言规律、事实知识和常见推理模式压缩进模型参数。
+        </p>
+        <p>
+          这不是完美解决方案，因为互联网数据会带来偏差、过时和幻觉问题。但它确实让智能体获得了前所未有的通用知识基础，也让“先理解高层目标，再拆解行动”的现代 Agent 成为可能。
+        </p>
+
+        <h2>现代 LLM Agent：历史思想的融合</h2>
+        <p>
+          学到最后，我发现现代 LLM Agent 不是单一技术的胜利，而是多条历史线索的融合：符号主义留下了规则、规划和工具调用的思想；强化学习留下了反馈、奖励和策略优化的思想；预训练提供了世界知识和通用语言能力。
+        </p>
+
+        <figure class="article-figure">
+          <img src="imgs/chapter2/04-framework-llm-agent-loop.png" alt="现代 LLM Agent 核心循环配图" />
+          <figcaption>现代 Agent 的核心，是在感知、思考、行动、反馈和记忆之间持续循环。</figcaption>
+        </figure>
+
+        <p>
+          所以，第二章给我的最大收获是：理解 Agent 不能只看当下流行的框架，也要看它背后的历史问题。每一代技术都在回答一个旧问题，同时也留下新的问题。今天的 LLM Agent 很强，但依然要面对幻觉、安全、评估、对齐和可靠性这些挑战。
+        </p>
+
+        <h2>我的总结</h2>
+        <p>
+          如果第一章让我知道“Agent 是什么”，第二章就是让我知道“Agent 为什么会变成现在这样”。从规则到学习，从单体到协作，从手写知识到大规模预训练，智能体的发展史其实是一条不断扩展能力边界的路线。
+        </p>
+        <p>
+          下一章要进入大语言模型本身。对我来说，这一步很重要，因为现代 Agent 的大脑就是 LLM，只有理解 LLM 的基本原理，后面学习多智能体、工具调用和 MCP 才不会只停留在表面。
+        </p>
+
+        <p class="source-note">
+          原文学习材料：
+          <a href="https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter2/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E5%8F%91%E5%B1%95%E5%8F%B2.md">
+            Datawhale Hello Agents 第二章《智能体发展史》
+          </a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 K1ndlyLiz. Built for GitHub Pages.</p>
+    </footer>
+  </body>
+</html>
