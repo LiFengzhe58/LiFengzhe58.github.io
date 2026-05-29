@@ -324,6 +324,20 @@ h1 {
   padding-left: 1.25rem;
 }
 
+.article-page a {
+  color: var(--teal);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.source-note {
+  margin-top: 34px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 16px;
+}
+
 .back-link {
   display: inline-flex;
   margin-bottom: 20px;
