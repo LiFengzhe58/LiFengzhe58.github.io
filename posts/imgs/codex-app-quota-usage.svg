@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520" role="img" aria-labelledby="title desc">
+  <title id="title">Codex App quota menu screenshot style illustration</title>
+  <desc id="desc">A dark Codex App sidebar menu showing remaining usage at 98 percent for five hours and 97 percent for one week.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#191919"/>
+      <stop offset="1" stop-color="#32312f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="820" height="520" fill="#f7f5ef"/>
+  <g filter="url(#shadow)">
+    <rect x="92" y="42" width="626" height="436" rx="18" fill="url(#bg)"/>
+    <rect x="92" y="42" width="626" height="436" rx="18" fill="none" stroke="#4c4b48" stroke-width="2"/>
+  </g>
+  <g font-family="Inter, 'Microsoft YaHei', Arial, sans-serif">
+    <g fill="none" stroke="#d8d8d2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity=".92">
+      <circle cx="132" cy="84" r="15"/>
+      <circle cx="132" cy="80" r="5"/>
+      <path d="M121 96c5-9 17-9 22 0"/>
+      <path d="M120 135h24m-20-10h16m-16 20h16"/>
+      <circle cx="132" cy="184" r="16"/>
+      <path d="M126 188l5 5 11-15"/>
+      <path d="M116 250h26l7 34h-41z"/>
+      <path d="M123 250l5-10h15l5 10"/>
+      <path d="M117 396h22"/>
+      <path d="M128 386l10 10-10 10"/>
+      <path d="M113 374h18"/>
+    </g>
+    <g fill="#f3f1ea" font-size="30" font-weight="800">
+      <text x="168" y="93">个人资料</text>
+      <text x="168" y="146">设置</text>
+      <text x="168" y="201">剩余用量</text>
+      <text x="168" y="372">了解更多</text>
+      <text x="168" y="427">退出登录</text>
+    </g>
+    <g fill="#f3f1ea" font-size="27" font-weight="800">
+      <text x="168" y="256">5 小时</text>
+      <text x="168" y="309">1 周</text>
+      <text x="168" y="364">升级至 Pro</text>
+    </g>
+    <g fill="#bdbbb5" font-size="27" font-weight="700" text-anchor="end">
+      <text x="608" y="256">98%</text>
+      <text x="608" y="309">97%</text>
+    </g>
+    <g fill="#bdbbb5" font-size="25" font-weight="700">
+      <text x="625" y="256">17:37</text>
+      <text x="625" y="309">6月8日</text>
+    </g>
+    <g fill="none" stroke="#bdbbb5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M665 190l13 13 13-13"/>
+      <path d="M671 345h23v23"/>
+      <path d="M692 347l-29 29"/>
+      <path d="M671 398h23v23"/>
+      <path d="M692 400l-29 29"/>
+    </g>
+    <g opacity=".18" fill="#f3f1ea" font-size="27" font-weight="700">
+      <text x="168" y="43">帮我运行安装脚本 bash i...</text>
+      <text x="168" y="96">start</text>
+      <text x="168" y="149">youngyangyang04/Test-Auto...</text>
+    </g>
+  </g>
+</svg>
