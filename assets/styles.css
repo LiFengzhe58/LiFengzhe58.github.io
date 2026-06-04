@@ -324,6 +324,50 @@ h1 {
   padding-left: 1.25rem;
 }
 
+.article-page ol {
+  padding-left: 1.25rem;
+}
+
+.article-page table {
+  width: 100%;
+  margin: 28px 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.article-page th,
+.article-page td {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-page th {
+  background: rgba(29, 113, 109, 0.09);
+  color: #175c59;
+  font-weight: 900;
+}
+
+.article-page pre {
+  overflow-x: auto;
+  margin: 18px 0;
+  padding: 14px 16px;
+  border: 1px solid rgba(29, 113, 109, 0.18);
+  border-radius: 8px;
+  background: rgba(29, 113, 109, 0.08);
+}
+
+.article-page pre code {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-weight: 700;
+  white-space: pre;
+}
+
 .article-page code {
   padding: 0.1em 0.35em;
   border: 1px solid rgba(29, 113, 109, 0.18);
