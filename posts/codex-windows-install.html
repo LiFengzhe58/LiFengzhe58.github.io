@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="为 Windows 系统安装 Codex 的保姆级教程：安装 Git、Node.js，使用 npm 安装 Codex，并完成登录与版本检查。"
+    />
+    <title>为 Windows 系统安装 Codex（保姆级教程） | K1ndlyLiz</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="K1ndlyLiz 首页">
+        <span class="brand-mark">K</span>
+        <span>K1ndlyLiz</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="../index.html">首页</a>
+        <a href="../index.html#posts" aria-current="page">文章</a>
+        <a href="../about.html">关于</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <article class="article-page">
+        <a class="back-link" href="../index.html#posts">← 返回文章列表</a>
+        <time datetime="2026-06-17">2026-06-17</time>
+        <h1>为 Windows 系统安装 Codex（保姆级教程）</h1>
+        <p class="lead">
+          这篇文章记录在 Windows 系统中安装 OpenAI Codex 的完整流程：先准备 Git 和 Node.js，
+          再通过 npm 安装 Codex，最后完成登录、版本检查和在 PyCharm 中打开使用。
+        </p>
+
+        <h2>1. Git 安装</h2>
+        <h3>1.1 查看自己的系统架构</h3>
+        <p>按 <code>Win + R</code>，输入 <code>msinfo32</code> 可以直接查看系统信息。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-01.png" alt="在运行窗口输入 msinfo32" />
+        </figure>
+        <p>系统信息如下：</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-02.png" alt="Windows 系统信息中查看系统类型" />
+        </figure>
+
+        <h3>1.2 Git 下载</h3>
+        <p>
+          可以直接下载 Windows 系统 x64 架构 Git 安装包，或者进入
+          <a href="https://git-scm.com/install/windows" rel="nofollow">Git 官网</a>
+          选择适合自己系统的版本。我的电脑是 x64，所以直接单击下载。
+        </p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-03.png" alt="Git 官网 Windows 下载页面" />
+        </figure>
+        <p>下载成功后直接安装。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-04.png" alt="Git 安装包下载完成" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-05.png" alt="Git 安装向导第一页" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-06.png" alt="Git 安装选项页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-07.png" alt="Git 安装路径和组件设置页面" />
+        </figure>
+        <p>其它步骤保持默认，点击 <code>Next</code> 即可。</p>
+
+        <h3>1.3 检查 Git 是否安装成功</h3>
+        <p>按 <code>Win + R</code>，输入 <code>cmd</code> 打开终端。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-08.png" alt="在运行窗口输入 cmd" />
+        </figure>
+        <p>输入：</p>
+        <pre><code>git --version</code></pre>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-09.png" alt="终端显示 Git 版本号" />
+        </figure>
+
+        <h2>2. 下载与安装 Node.js 节点</h2>
+        <h3>2.1 下载节点</h3>
+        <p>
+          可以直接下载 Windows 系统 Node.js 官方 LTS 版，或者进入
+          <a href="https://nodejs.org/zh-cn/download" rel="nofollow">Node.js 官方下载页面</a>。
+        </p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-10.png" alt="Node.js 官方下载页面" />
+        </figure>
+
+        <h3>2.2 安装节点</h3>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-11.png" alt="Node.js 安装向导欢迎页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-12.png" alt="Node.js 许可协议页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-13.png" alt="Node.js 安装路径页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-14.png" alt="Node.js 自定义安装选项页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-15.png" alt="Node.js Tools for Native Modules 页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-16.png" alt="Node.js 准备安装页面" />
+        </figure>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-17.png" alt="Node.js 安装完成页面" />
+        </figure>
+        <p>然后会进入终端，按任意键即可；如果出现弹窗，全部选择“是”。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-18.png" alt="Node.js 安装后打开终端提示" />
+        </figure>
+        <p>最后进入自动安装，等待安装完成。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-19.png" alt="Node.js 自动安装依赖过程" />
+        </figure>
+
+        <h3>2.3 检查</h3>
+        <p>输入以下指令检查是否安装成功：</p>
+        <pre><code>node -v
+npm -v</code></pre>
+        <p>出现版本号即可。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-20.png" alt="终端显示 Node.js 和 npm 版本号" />
+        </figure>
+
+        <h2>3. Codex 安装</h2>
+        <h3>3.1 安装 Codex</h3>
+        <p>将下列代码复制到终端进行安装：</p>
+        <pre><code>npm install -g @openai/codex</code></pre>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-21.png" alt="在终端输入 npm install 安装 Codex" />
+        </figure>
+        <p>安装成功如下：</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-22.png" alt="Codex 安装成功后的终端输出" />
+        </figure>
+
+        <h3>3.2 检查版本</h3>
+        <pre><code>codex --version</code></pre>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-23.png" alt="终端显示 Codex 版本号" />
+        </figure>
+
+        <h3>3.3 登录 Codex</h3>
+        <p>直接在终端输入 <code>codex</code>。第一次会进入登录界面。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-24.png" alt="Codex 登录方式选择界面" />
+        </figure>
+        <p>输入 <code>1</code>。</p>
+        <p>进入如下页面：</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-25.png" alt="Codex 提示浏览器登录链接" />
+        </figure>
+        <p>
+          系统一般会直接打开登录页面。如果没有打开，就把终端里的链接复制到浏览器，
+          然后登录自己的 GPT 账号即可。
+        </p>
+        <p>登录成功后的界面如下：</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-26.png" alt="Codex 登录成功提示" />
+        </figure>
+        <p>输入 <code>hello</code>，可以看到 Codex 回复 <code>Hey! What can I help with today?</code>。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-27.png" alt="Codex 成功回复 hello" />
+        </figure>
+        <p>到此结束。</p>
+
+        <h3>3.4 切换账号</h3>
+        <p>如果想切换账号，请在终端直接输入：</p>
+        <pre><code>codex login</code></pre>
+
+        <h2>4. 在 PyCharm 打开 Codex</h2>
+        <p>首先使用 PyCharm 打开项目文件，然后再打开终端。</p>
+        <figure class="article-figure">
+          <img src="imgs/codex-windows-install/codex-windows-install-28.png" alt="在 PyCharm 中打开终端使用 Codex" />
+        </figure>
+
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 K1ndlyLiz. Built for GitHub Pages.</p>
+    </footer>
+  </body>
+</html>

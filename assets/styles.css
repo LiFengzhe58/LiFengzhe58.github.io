@@ -309,6 +309,12 @@ h1 {
   line-height: 1.2;
 }
 
+.article-page h3 {
+  margin: 26px 0 8px;
+  font-size: 22px;
+  line-height: 1.25;
+}
+
 .article-page p,
 .article-page li {
   color: #465057;
